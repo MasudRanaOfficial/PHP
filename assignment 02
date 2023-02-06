@@ -1,0 +1,7 @@
+<?php
+
+$tuition = 15000;
+
+$commission = $tuition < 7000 ? "Invalid Date" : ($tuition < 10000 && $tuition > 7000 ? 0.15 * $tuition:($tuition < 20000 && $tuition > 10000 ? 0.20 * $tuition : 0.25 * $tuition));
+
+echo "The Commission is $commission";
